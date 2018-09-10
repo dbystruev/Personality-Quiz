@@ -322,6 +322,10 @@
                     <navigationItem key="navigationItem" title="Результат" id="bxd-7D-ODT">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="GbO-eO-CSS"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="uRO-Vm-IG4" id="9BI-Az-Ed7"/>
+                        <outlet property="resultDefinitionLabel" destination="gkE-3H-uIc" id="XC2-oR-TDq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CY7-1V-3Ts" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
