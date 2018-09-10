@@ -212,13 +212,18 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ffJ-t2-Hnh">
+                                <rect key="frame" x="32" y="462" width="256" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ffJ-t2-Hnh" firstAttribute="leading" secondItem="r3d-Rj-Cw9" secondAttribute="leadingMargin" constant="16" id="2BF-Yz-kZU"/>
                             <constraint firstItem="AUA-Ai-rKb" firstAttribute="leading" secondItem="B2F-wS-X3v" secondAttribute="leading" constant="16" id="5EB-8J-0j0"/>
                             <constraint firstItem="B2F-wS-X3v" firstAttribute="trailing" secondItem="Rc4-wU-7b8" secondAttribute="trailing" constant="16" id="E7N-QC-C2u"/>
                             <constraint firstItem="Rc4-wU-7b8" firstAttribute="top" secondItem="0kc-RD-MEZ" secondAttribute="bottom" constant="16" id="JTo-mS-yB1"/>
                             <constraint firstItem="BeG-4o-52d" firstAttribute="leading" secondItem="B2F-wS-X3v" secondAttribute="leading" constant="16" id="Z4A-kY-Cxp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ffJ-t2-Hnh" secondAttribute="trailing" constant="16" id="Z5k-c6-7EV"/>
                             <constraint firstItem="BeG-4o-52d" firstAttribute="centerY" secondItem="r3d-Rj-Cw9" secondAttribute="centerY" id="bwV-nO-Gh4"/>
                             <constraint firstItem="Rc4-wU-7b8" firstAttribute="centerY" secondItem="r3d-Rj-Cw9" secondAttribute="centerY" id="d0e-kf-H2Y"/>
                             <constraint firstItem="AUA-Ai-rKb" firstAttribute="centerY" secondItem="r3d-Rj-Cw9" secondAttribute="centerY" id="fq0-pb-Vgp"/>
@@ -228,14 +233,27 @@
                             <constraint firstItem="Rc4-wU-7b8" firstAttribute="leading" secondItem="B2F-wS-X3v" secondAttribute="leading" constant="16" id="pIa-68-gt4"/>
                             <constraint firstItem="B2F-wS-X3v" firstAttribute="trailing" secondItem="BeG-4o-52d" secondAttribute="trailing" constant="16" id="v2P-94-IRO"/>
                             <constraint firstItem="B2F-wS-X3v" firstAttribute="trailing" secondItem="0kc-RD-MEZ" secondAttribute="trailing" constant="16" id="wil-AY-Nrd"/>
+                            <constraint firstItem="B2F-wS-X3v" firstAttribute="bottom" secondItem="ffJ-t2-Hnh" secondAttribute="bottom" constant="16" id="xv5-fo-shA"/>
                             <constraint firstItem="B2F-wS-X3v" firstAttribute="trailing" secondItem="AUA-Ai-rKb" secondAttribute="trailing" constant="16" id="yYo-6q-OQi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B2F-wS-X3v"/>
                     </view>
                     <navigationItem key="navigationItem" id="Gqx-xY-qbp"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="XsN-kB-83b" id="iEr-QA-QRq"/>
+                        <outlet property="multiLabel2" destination="vom-kM-Geh" id="Xa8-5k-8pc"/>
+                        <outlet property="multiLabel3" destination="vpe-p1-hFM" id="N1j-Yx-jio"/>
+                        <outlet property="multiLabel4" destination="iON-Uw-m4j" id="fhB-bA-wmW"/>
                         <outlet property="multipleStackView" destination="AUA-Ai-rKb" id="Bmb-JH-zwY"/>
+                        <outlet property="questionLabel" destination="0kc-RD-MEZ" id="LEa-2f-d9D"/>
+                        <outlet property="questionProgressView" destination="ffJ-t2-Hnh" id="EtY-f8-zFt"/>
+                        <outlet property="rangedLabel1" destination="2Rh-Rz-VZA" id="nEA-lB-vtb"/>
+                        <outlet property="rangedLabel2" destination="IDq-G0-BD9" id="XQ4-yN-J1c"/>
                         <outlet property="rangedStackView" destination="BeG-4o-52d" id="1b0-2H-pJm"/>
+                        <outlet property="singleButton1" destination="W2K-Rl-ZlN" id="Fga-Wd-6sm"/>
+                        <outlet property="singleButton2" destination="f2f-Ai-Jcj" id="cE6-lt-z1d"/>
+                        <outlet property="singleButton3" destination="QzH-Jv-la2" id="Jtq-LD-hNx"/>
+                        <outlet property="singleButton4" destination="MGF-Hq-LhU" id="Cyq-NQ-9Fn"/>
                         <outlet property="singleStackView" destination="Rc4-wU-7b8" id="vow-bk-af1"/>
                         <segue destination="YIG-vz-rfj" kind="show" identifier="ResultsSegue" id="k3B-zp-PDr"/>
                     </connections>
