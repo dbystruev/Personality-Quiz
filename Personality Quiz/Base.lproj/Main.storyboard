@@ -117,6 +117,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0K-sU-HFI">
                                         <rect key="frame" x="0.0" y="90.5" width="288" height="30"/>
                                         <state key="normal" title="Ответить"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="wK1-4U-AJ2" eventType="touchUpInside" id="bh1-NG-fAF"/>
+                                            <action selector="rangedAnswerButtonPressed" destination="wK1-4U-AJ2" eventType="touchUpInside" id="oz1-XF-K5g"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -132,6 +136,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2K-Rl-ZlN">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="31"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="wK1-4U-AJ2" eventType="touchUpInside" id="Bi0-0W-ZvZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2f-Ai-Jcj">
                                         <rect key="frame" x="0.0" y="39" width="288" height="30.5"/>
@@ -209,6 +216,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oA-NB-BQ3">
                                         <rect key="frame" x="0.0" y="140" width="288" height="31"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="wK1-4U-AJ2" eventType="touchUpInside" id="OX2-Aw-7Em"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -244,11 +254,16 @@
                         <outlet property="multiLabel2" destination="vom-kM-Geh" id="Xa8-5k-8pc"/>
                         <outlet property="multiLabel3" destination="kMX-TK-wI1" id="lfd-M0-dWI"/>
                         <outlet property="multiLabel4" destination="iON-Uw-m4j" id="fhB-bA-wmW"/>
+                        <outlet property="multiSwitch1" destination="B8j-kG-FXw" id="haw-cG-4or"/>
+                        <outlet property="multiSwitch2" destination="qyS-S1-XZT" id="4aa-d2-WUt"/>
+                        <outlet property="multiSwitch3" destination="BzC-hg-AZg" id="Hab-oi-f3P"/>
+                        <outlet property="multiSwitch4" destination="pcz-hJ-IAz" id="Ho0-RV-jxd"/>
                         <outlet property="multipleStackView" destination="AUA-Ai-rKb" id="Bmb-JH-zwY"/>
                         <outlet property="questionLabel" destination="0kc-RD-MEZ" id="LEa-2f-d9D"/>
                         <outlet property="questionProgressView" destination="ffJ-t2-Hnh" id="EtY-f8-zFt"/>
                         <outlet property="rangedLabel1" destination="2Rh-Rz-VZA" id="nEA-lB-vtb"/>
                         <outlet property="rangedLabel2" destination="IDq-G0-BD9" id="XQ4-yN-J1c"/>
+                        <outlet property="rangedSlider" destination="bwl-La-Zfq" id="ZCC-Zv-oz1"/>
                         <outlet property="rangedStackView" destination="BeG-4o-52d" id="1b0-2H-pJm"/>
                         <outlet property="singleButton1" destination="W2K-Rl-ZlN" id="Fga-Wd-6sm"/>
                         <outlet property="singleButton2" destination="f2f-Ai-Jcj" id="cE6-lt-z1d"/>
@@ -310,7 +325,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zt7-Sh-Ufl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fv6-Wo-IAe">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
