@@ -242,7 +242,7 @@
                     <connections>
                         <outlet property="multiLabel1" destination="XsN-kB-83b" id="iEr-QA-QRq"/>
                         <outlet property="multiLabel2" destination="vom-kM-Geh" id="Xa8-5k-8pc"/>
-                        <outlet property="multiLabel3" destination="vpe-p1-hFM" id="N1j-Yx-jio"/>
+                        <outlet property="multiLabel3" destination="kMX-TK-wI1" id="lfd-M0-dWI"/>
                         <outlet property="multiLabel4" destination="iON-Uw-m4j" id="fhB-bA-wmW"/>
                         <outlet property="multipleStackView" destination="AUA-Ai-rKb" id="Bmb-JH-zwY"/>
                         <outlet property="questionLabel" destination="0kc-RD-MEZ" id="LEa-2f-d9D"/>
