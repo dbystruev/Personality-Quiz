@@ -154,6 +154,10 @@ class QuestionViewController: UIViewController {
     
     func updateMultipleStack(using answers: [Answer]) {
         multipleStackView.isHidden = false
+        multiSwitch1.isOn = false
+        multiSwitch2.isOn = false
+        multiSwitch3.isOn = false
+        multiSwitch4.isOn = false
         multiLabel1.text = answers[0].text
         multiLabel2.text = answers[1].text
         multiLabel3.text = answers[2].text
@@ -163,11 +167,18 @@ class QuestionViewController: UIViewController {
     
     func updateRangedStack(using answers: [Answer]) {
         rangedStackView.isHidden = false
+        rangedSlider.setValue(0.5, animated: true)
         rangedLabel1.text = answers.first?.text
         rangedLabel2.text = answers.last?.text
     }
 
     func nextQuestion() {
-        // TODO: сделать
+        questionIndex += 1
+        
+        if questionIndex < questions.count {
+            updateUI()
+        } else {
+            performSegue(withIdentifier: "ResultsSegue", sender: nil)
+        }
     }
 }
