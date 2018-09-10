@@ -234,6 +234,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Gqx-xY-qbp"/>
                     <connections>
+                        <outlet property="multipleStackView" destination="AUA-Ai-rKb" id="Bmb-JH-zwY"/>
+                        <outlet property="rangedStackView" destination="BeG-4o-52d" id="1b0-2H-pJm"/>
+                        <outlet property="singleStackView" destination="Rc4-wU-7b8" id="vow-bk-af1"/>
                         <segue destination="YIG-vz-rfj" kind="show" identifier="ResultsSegue" id="k3B-zp-PDr"/>
                     </connections>
                 </viewController>
