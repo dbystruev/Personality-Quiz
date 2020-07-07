@@ -14,6 +14,11 @@
 		697A832B21419D5400014E61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697A832921419D5400014E61 /* LaunchScreen.storyboard */; };
 		697A83332141A52700014E61 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697A83322141A52700014E61 /* QuestionViewController.swift */; };
 		697A83352141A53B00014E61 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697A83342141A53B00014E61 /* ResultsViewController.swift */; };
+		69D4924124B40AFA0061E58D /* Screenshot04.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 69D4923C24B40AF90061E58D /* Screenshot04.jpeg */; };
+		69D4924224B40AFA0061E58D /* Screenshot01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 69D4923D24B40AF90061E58D /* Screenshot01.jpeg */; };
+		69D4924324B40AFA0061E58D /* Screenshot02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 69D4923E24B40AF90061E58D /* Screenshot02.jpeg */; };
+		69D4924424B40AFA0061E58D /* Screenshot03.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 69D4923F24B40AFA0061E58D /* Screenshot03.jpeg */; };
+		69D4924524B40AFA0061E58D /* Screenshot05.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 69D4924024B40AFA0061E58D /* Screenshot05.jpeg */; };
 		69F5D0862146DEB0003FE7DA /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F5D0852146DEB0003FE7DA /* Question.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +32,11 @@
 		697A832C21419D5400014E61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		697A83322141A52700014E61 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		697A83342141A53B00014E61 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		69D4923C24B40AF90061E58D /* Screenshot04.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot04.jpeg; sourceTree = "<group>"; };
+		69D4923D24B40AF90061E58D /* Screenshot01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot01.jpeg; sourceTree = "<group>"; };
+		69D4923E24B40AF90061E58D /* Screenshot02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot02.jpeg; sourceTree = "<group>"; };
+		69D4923F24B40AFA0061E58D /* Screenshot03.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot03.jpeg; sourceTree = "<group>"; };
+		69D4924024B40AFA0061E58D /* Screenshot05.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot05.jpeg; sourceTree = "<group>"; };
 		69F5D0852146DEB0003FE7DA /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,16 +71,29 @@
 			isa = PBXGroup;
 			children = (
 				697A832021419D4E00014E61 /* AppDelegate.swift */,
+				697A832721419D5400014E61 /* Assets.xcassets */,
+				697A832C21419D5400014E61 /* Info.plist */,
 				697A832221419D4E00014E61 /* IntroductionViewController.swift */,
-				697A83322141A52700014E61 /* QuestionViewController.swift */,
-				697A83342141A53B00014E61 /* ResultsViewController.swift */,
+				697A832921419D5400014E61 /* LaunchScreen.storyboard */,
 				697A832421419D4E00014E61 /* Main.storyboard */,
 				69F5D0852146DEB0003FE7DA /* Question.swift */,
-				697A832721419D5400014E61 /* Assets.xcassets */,
-				697A832921419D5400014E61 /* LaunchScreen.storyboard */,
-				697A832C21419D5400014E61 /* Info.plist */,
+				697A83322141A52700014E61 /* QuestionViewController.swift */,
+				697A83342141A53B00014E61 /* ResultsViewController.swift */,
+				69D4924624B40B020061E58D /* Screenshots */,
 			);
 			path = "Personality Quiz";
+			sourceTree = "<group>";
+		};
+		69D4924624B40B020061E58D /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				69D4923D24B40AF90061E58D /* Screenshot01.jpeg */,
+				69D4923E24B40AF90061E58D /* Screenshot02.jpeg */,
+				69D4923F24B40AFA0061E58D /* Screenshot03.jpeg */,
+				69D4923C24B40AF90061E58D /* Screenshot04.jpeg */,
+				69D4924024B40AFA0061E58D /* Screenshot05.jpeg */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +128,7 @@
 				TargetAttributes = {
 					697A831C21419D4E00014E61 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -131,9 +155,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69D4924524B40AFA0061E58D /* Screenshot05.jpeg in Resources */,
 				697A832B21419D5400014E61 /* LaunchScreen.storyboard in Resources */,
+				69D4924424B40AFA0061E58D /* Screenshot03.jpeg in Resources */,
 				697A832821419D5400014E61 /* Assets.xcassets in Resources */,
 				697A832621419D4E00014E61 /* Main.storyboard in Resources */,
+				69D4924324B40AFA0061E58D /* Screenshot02.jpeg in Resources */,
+				69D4924224B40AFA0061E58D /* Screenshot01.jpeg in Resources */,
+				69D4924124B40AFA0061E58D /* Screenshot04.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,15 +324,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2020.07.07;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				INFOPLIST_FILE = "Personality Quiz/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.learnSwift.Personality-Quiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -313,15 +344,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2020.07.07;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				INFOPLIST_FILE = "Personality Quiz/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.learnSwift.Personality-Quiz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
